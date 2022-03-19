@@ -1,3 +1,27 @@
+# 엘든링 스팀 리뷰 클러스터링 및 분석
+
+Colab Notebook: https://colab.research.google.com/drive/1tTRkHRrL9ZJFXvkg3lJOABCMc-W18ryn
+
+## 한글 리뷰 클러스터링
+
+![](result/clustering.png)
+
+## 워드클라우드
+
+![](result/wordcloud.png)
+
+## 기타
+
+![](result/votedup.png)
+
+![](result/etc.png)
+
+## Ko-Sentence-BERT-SKTBERT 수정사항
+
+- `model_kwargs` 에서 `return_dict` 값이 들어가 오류나는 사항 수정 (버전 문제?)
+
+---
+
 # Ko-Sentence-BERT-SKTBERT
 
 - SKT KoBERT 사용 학습 <br>
