@@ -509,6 +509,8 @@ class PreTrainedModel(nn.Module, ModuleUtilsMixin):
             resolved_archive_file = None
 
         # Instantiate model.
+        if 'return_dict' in model_kwargs: del model_kwargs['return_dict']
+
         model = cls(config, *model_args, **model_kwargs)
 
         if state_dict is None and not from_tf:
